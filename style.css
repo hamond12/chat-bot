@@ -1,0 +1,58 @@
+.rigth-msg {
+  display: flex;
+  justify-content: flex-end;
+  float: right;
+  width: 100%;
+}
+
+.right-msg-form {
+  margin-right: 10px;
+  text-align: right;
+  background-color: #ffea00;
+  border-radius: 8px;
+}
+
+.right-msg img {
+  float: right;
+}
+
+.right-msg-time {
+  margin-top: 4px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.right-msg-p {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: -10px;
+}
+
+.left-msg {
+  display: flex;
+  width: 100%;
+}
+
+.left-msg-form {
+  margin-top: 30px;
+  margin-left: 10px;
+  background-color: #e6cda7;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.left-msg-time {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.left-msg-p {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+}
+
+.left-img-div {
+  margin-top: 28px;
+}
