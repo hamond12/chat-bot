@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
+
+h2 {
+  font-family: "Jua", sans-serif;
+  font-size: 60px;
+}
+
+h4 {
+  font-family: "Nanum Gothic Coding", monospace;
+}
+
 .rigth-msg {
   display: flex;
   justify-content: flex-end;
@@ -17,15 +29,18 @@
 }
 
 .right-msg-time {
-  margin-top: 4px;
+  margin-top: 7px;
   margin-right: 10px;
   margin-left: 10px;
+  font-size: 14px;
+  font-family: "Nanum Gothic Coding", monospace;
 }
 
 .right-msg-p {
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: -10px;
+  font-size: 17px;
 }
 
 .left-msg {
@@ -44,15 +59,49 @@
 .left-msg-time {
   margin-right: 10px;
   margin-left: 10px;
-  margin-top: 5px;
+  margin-top: 7px;
+  font-size: 14px;
+  font-family: "Nanum Gothic Coding", monospace;
 }
 
 .left-msg-p {
   margin-right: 10px;
   margin-left: 10px;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
+  font-size: 17px;
 }
 
 .left-img-div {
   margin-top: 28px;
+}
+
+.row-widget.stButton {
+  text-align: right;
+}
+
+.css-1x8cf1d {
+  font-size: 18;
+  width: 100px;
+  height: 40px;
+  padding: 0.25rem 0.75rem;
+  border-radius: 5px;
+  line-height: 1.6;
+  user-select: none;
+  background-color: white;
+  color: black;
+  border: 1px solid rgba(49, 51, 63, 0.2);
+}
+
+input {
+  border: none;
+}
+
+.user-explain {
+  font-size: 18px;
+  font-family: "Nanum Gothic Coding", monospace;
+  word-spacing: -2px;
+}
+
+.css-81oif8.effi0qh3 {
+  margin-top: -30px;
 }
