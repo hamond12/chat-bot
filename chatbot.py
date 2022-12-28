@@ -71,11 +71,11 @@ def local_css(file_name):
 local_css("style.css")
 
 #이미지 불러오기
-file = open("image\아리.png","rb")
+file = open("./image/아리.png","rb")
 contents = file.read()
 data_url = base64.b64encode(contents).decode("UTF-8")
 
-file2 = open("image\소리.png","rb")
+file2 = open("./image/소리.png","rb")
 contents2 = file2.read()
 data_url2 = base64.b64encode(contents2).decode("UTF-8")
 
