@@ -57,10 +57,10 @@ if submitted and user_input:
     answer = df.loc[df['distance'].idxmax()] #idxmax: unknown word
 
     st.session_state.past.append(user_input)
-    if answer['distance'] > 0.5:
-        st.session_state.generated.append(answer['챗봇'])
-    else:
-        st.session_state.generated.append("학습되지 않은 질문입니다. 학교 연락처로 질문해보세요 (051-971-2153)")
+    if answer['distance'] > 0.6: #질문이 학습자료와 유사도가 60%이상이라면 
+        st.session_state.generated.append(answer['챗봇']) #대답
+    else: #아니면
+        st.session_state.generated.append("잘 모르겠습니다. 학교 연락처로 질문해보세요 (051-971-2153)") #예외처리
 
 
 #css 불러오기
@@ -97,11 +97,11 @@ for i in range(len(st.session_state['past'])):
             </div>
         </div>
         <div class="left-msg">
-            <div class="left-img">
-                <div class="left-img-div">
-                    <img src="data:image/png;base64,{3}" width="50" height="70"/>
-                </div>
+        <div class="left-img">
+            <div class="left-img-div">
+                <img src="data:image/png;base64,{3}" width="50" height="70"/>
             </div>
+        </div>
             <div class="left-msg-form">
                 <div class="left-msg-time">{4}</div>
                 <p class="left-msg-p">{1}</p>
@@ -125,4 +125,3 @@ st.sidebar.info(
     📞 051-971-2153
     """
 )
-
