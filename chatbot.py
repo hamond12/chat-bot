@@ -4,7 +4,6 @@ import pandas as pd
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import matplotlib.pyplot as plt #그래프 그리기
-from matplotlib import font_manager, rc #한글 폰트 사용
 import json
 import base64
 from datetime import datetime
@@ -92,15 +91,15 @@ with tab1:
 
     st.markdown("<br><br>", unsafe_allow_html=True)
 
+    st.markdown("""<h1 class="graph">학생 및 교사 구성</h1>""", unsafe_allow_html=True)
+
+    st.markdown("")
+
     col1, col2 = st.columns(2)
     
     with col1:
         #학생 수 원형 차트
-        font_path = "C:/Windows/Fonts/NanumGothic.ttf"
-        font = font_manager.FontProperties(fname=font_path).get_name()
-        rc('font', family=font)
-
-        labels = ["소프트웨어", "임베디드", "1학년"]
+        labels = ["software", "embeded", "first grade"]
         sizes = [32,32,64]
         group_colors=['lightskyblue','lightcoral','yellowgreen']
         wedgeprops = {
@@ -120,16 +119,12 @@ with tab1:
                 textprops={'fontsize':10})
         ax1.axis('equal') 
 
-        plt.title('학생', size=25)
+        plt.title('Student', size=25)
         plt.figure(figsize=(9,9))
         st.pyplot(fig1)
 
     with col2:
-        font_path = "C:/Windows/Fonts/NanumGothic.ttf"
-        font = font_manager.FontProperties(fname=font_path).get_name()
-        rc('font', family=font)
-
-        labels = ["보통교사", "전문교과", "비교과교사"]
+        labels = ["Normal", "major", "etc"]
         sizes = [12,20,4]
         group_colors=['#F1D3B3','#C7BCA1','#8B7E74']
         wedgeprops = {
@@ -149,8 +144,8 @@ with tab1:
                 textprops={'fontsize':10})
         ax1.axis('equal') 
 
-        plt.title('교원', size=25)
-        plt.figure(figsize=(12,12))
+        plt.title('Teacher', size=25)
+        plt.figure(figsize=(9,9))
         st.pyplot(fig1)
 
 #챗봇 탭
