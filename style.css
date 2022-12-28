@@ -15,7 +15,7 @@ h4 {
   display: flex;
   justify-content: flex-end;
   float: right;
-  width: 80%;
+  width: 85%;
 }
 
 .right-msg-form {
@@ -34,7 +34,7 @@ h4 {
   margin-top: 7px;
   margin-right: 10px;
   margin-left: 10px;
-
+  font-size: 14px;
   font-family: "Nanum Gothic", sans-serif;
 }
 
@@ -48,7 +48,7 @@ h4 {
 
 .left-msg {
   display: flex;
-  width: 80%;
+  width: 85%;
 }
 
 .left-msg-form {
@@ -63,7 +63,7 @@ h4 {
   margin-right: 10px;
   margin-left: 10px;
   margin-top: 7px;
-  font-size: 13px;
+  font-size: 14px;
   font-family: "Nanum Gothic", sans-serif;
 }
 
