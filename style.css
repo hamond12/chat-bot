@@ -128,3 +128,10 @@ input {
 button {
   width: 100px;
 }
+
+.graph {
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: center;
+  font-size: 40px;
+}
+
