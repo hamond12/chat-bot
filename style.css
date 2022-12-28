@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 
 h2 {
   font-family: "Jua", sans-serif;
@@ -14,11 +15,12 @@ h4 {
   display: flex;
   justify-content: flex-end;
   float: right;
-  width: 100%;
+  width: 80%;
 }
 
 .right-msg-form {
   margin-right: 10px;
+  margin-bottom: 20px;
   text-align: right;
   background-color: #ffea00;
   border-radius: 8px;
@@ -32,20 +34,21 @@ h4 {
   margin-top: 7px;
   margin-right: 10px;
   margin-left: 10px;
-  font-size: 14px;
-  font-family: "Nanum Gothic Coding", monospace;
+
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 .right-msg-p {
   margin-right: 10px;
   margin-left: 10px;
-  margin-bottom: -10px;
+  margin-bottom: 7px;
   font-size: 17px;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 .left-msg {
   display: flex;
-  width: 100%;
+  width: 80%;
 }
 
 .left-msg-form {
@@ -60,8 +63,8 @@ h4 {
   margin-right: 10px;
   margin-left: 10px;
   margin-top: 7px;
-  font-size: 14px;
-  font-family: "Nanum Gothic Coding", monospace;
+  font-size: 13px;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 .left-msg-p {
@@ -69,6 +72,7 @@ h4 {
   margin-left: 10px;
   margin-bottom: 7px;
   font-size: 17px;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 .left-img-div {
@@ -92,14 +96,14 @@ h4 {
   border: 1px solid rgba(49, 51, 63, 0.2);
 }
 
-input {
-  border: none;
-}
-
 .user-explain {
   font-size: 18px;
-  font-family: "Nanum Gothic Coding", monospace;
-  word-spacing: -2px;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+input {
+  border: none;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 .css-81oif8.effi0qh3 {
